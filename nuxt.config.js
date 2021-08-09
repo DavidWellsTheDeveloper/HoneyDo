@@ -63,6 +63,7 @@ export default {
       themes: {
         light: {
           primary: colors.amber.darken1,
+          secondary: colors.blueGrey,
           accent: colors.deepPurple,
 
         },

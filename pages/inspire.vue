@@ -1,57 +1,38 @@
 <template>
   <v-container>
+    <ServicesInspiration
+      src="/parallaximg/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
+      color="primary"
+    >
+      <h2>I'll keep your home clean, and fresh.</h2>
+      <p>I'm confident that you'll love the cleaning service, so your first cleaning is 
+        free of charge. After your first cleaning, we'll provide a quote for additional 
+        regular cleaning services.</p>
+    </ServicesInspiration>
+
+    <ServicesInspiration
+      src="/parallaximg/josh-hild-95RvuULh91A-unsplash.jpg"
+      color="secondary"
+      invert-align="true"
+    >
+      <h2>Have Pets? I'll watch them too!</h2>
+      <p>I provide a full set of pet services so you can be sure that your pet is well 
+        cared for while you're gone.</p>
+      <dl>
+        <dt>Pet Walking</dt>
+        <dd>Rest assured that your pet is getting attiquite exercise.</dd>
+        <dt>Dogs &amp; Cats</dt>
+        <dd></dd>
+        <dt>Daily Pet Updates</dt>
+        <dd>Recieve a photo update daily to keep up to date with your pets.</dd>
+      </dl>
+    </ServicesInspiration>
     
-    <v-row>
+    <!-- <v-row>
       <v-col>
-        <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
-        <!-- <v-carousel
-          :continuous="false"
-          :cycle="cycle"
-          :show-arrows="false"
-          hide-delimiter-background
-          delimiter-icon="mdi-minus"
-          height="300"
-        >
-          <v-carousel-item
-            v-for="(slide, i) in slides"
-            :key="i"
-          >
-            <v-sheet
-              :color="color"
-              height="100%"
-              tile
-            >
-              <v-row
-                class="fill-height"
-                align="center"
-                justify="center"
-              >
-                <div class="text-h2">
-                  {{ slide }}
-                </div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel> -->
+        <v-parallax src="/paralaximg/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"></v-parallax>
       </v-col>
-    </v-row>
-    <v-row>
-      <v-col class="text-center">
-        <img
-          src="/v.png"
-          alt="Vuetify.js"
-          class="mb-5"
-        >
-        <blockquote class="blockquote">
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
-      </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
@@ -72,5 +53,16 @@
 </script>
 
 <style lang="scss" scoped>
-
+dl {
+  dt {
+    font-weight: 600;
+  }
+  dd {
+    font-style: italic;
+    margin-left: 1em;
+  }
+}
+h2 {
+  margin-bottom: 20px;
+}
 </style>
