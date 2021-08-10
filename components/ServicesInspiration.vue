@@ -5,16 +5,21 @@
         <v-parallax v-if="isParallax" :src="src"></v-parallax>
       </v-col>
     </v-row>
-    <v-card :dark="dark" :color="color" class="px-5 py-5">
-      <v-row>
-        <v-col cols="4" class="text-center" :order="invertAlign ? 12 : 4" :color="color">
-          <v-icon x-large>mdi-bee</v-icon>
-        </v-col>
-        <v-col cols="8" class="text-left" :order="invertAlign ? 4 : 12">
-          <slot></slot>
-        </v-col>
-      </v-row>
-    </v-card>
+    <v-row>
+      <v-col cols="4" class="text-center" :order="invertAlign ? 12 : 4" :color="color">
+        <v-icon x-large>mdi-bee</v-icon>
+      </v-col>
+      <v-col cols="8" class="text-left" :order="invertAlign ? 4 : 12">
+        <v-card :dark="dark" :color="color" class="px-5 py-5">
+          <v-card-title primary-title>
+            {{ title }}
+          </v-card-title>
+          <v-card-text>
+            <slot></slot>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -41,6 +46,10 @@
       invertAlign: {
         type: Boolean,
         default: false
+      },
+      title: {
+        type: String,
+        default: ''
       }
 
     },
