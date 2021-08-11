@@ -23,7 +23,7 @@
         <dt>Pet Walking</dt>
         <dd>Rest assured that your pet is getting attiquite exercise.</dd>
         <dt>Dogs &amp; Cats</dt>
-        <dd></dd>
+        <dd>I'm experienced watching for dogs and cats, and will care for your pet as though it was my own.</dd>
         <dt>Daily Pet Updates</dt>
         <dd>Recieve a photo update daily to keep up to date with your pets.</dd>
       </dl>

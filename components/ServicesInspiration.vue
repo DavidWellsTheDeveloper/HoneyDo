@@ -1,16 +1,13 @@
 <template>
-  <v-container grid-list-xs class="my-5">
-    <v-row no-gutters>
+  <v-container grid-list-xs class="my-0">
+    <v-row class="flush-row" no-gutters>
       <v-col>
         <v-parallax v-if="isParallax" :src="src"></v-parallax>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col cols="4" class="text-center" :order="invertAlign ? 12 : 4" :color="color">
-        <v-icon x-large>mdi-bee</v-icon>
-      </v-col>
-      <v-col cols="8" class="text-left" :order="invertAlign ? 4 : 12">
-        <v-card :dark="dark" :color="color" class="px-5 py-5">
+    <v-row class="my-0">
+      <v-col cols="12" class="text-left py-0" :order="invertAlign ? 4 : 12">
+        <v-card :dark="dark" :color="color" class="py-0">
           <v-card-title primary-title>
             {{ title }}
           </v-card-title>
@@ -57,5 +54,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+.flush-row {
+  margin: 0px;
+  padding: 0px;
+}
 </style>
