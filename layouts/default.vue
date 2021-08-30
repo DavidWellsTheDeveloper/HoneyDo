@@ -74,8 +74,13 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Services',
+          to: '/services'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'About',
+          to: '/about'
         }
       ],
       miniVariant: false,

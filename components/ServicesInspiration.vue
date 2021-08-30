@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row class="my-0">
-      <v-col cols="12" class="text-left py-0" :order="invertAlign ? 4 : 12">
+      <v-col cols="12" class="text-left py-0">
         <v-card :dark="dark" :color="color" class="py-0">
           <v-card-title primary-title>
             {{ title }}
@@ -39,10 +39,6 @@
       color: {
         type: String,
         default: 'primary'
-      },
-      invertAlign: {
-        type: Boolean,
-        default: false
       },
       title: {
         type: String,

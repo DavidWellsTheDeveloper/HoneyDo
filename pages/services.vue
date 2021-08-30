@@ -48,15 +48,10 @@
 
 <script>
   export default {
+    name: 'Services',
     data() {
       return {
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
+        
       }
     },
   }
