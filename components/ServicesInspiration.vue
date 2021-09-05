@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-xs class="my-0">
+  <v-container fluid class="my-0">
     <v-row class="flush-row" no-gutters>
       <v-col>
         <v-parallax v-if="isParallax" :src="src"></v-parallax>

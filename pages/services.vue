@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <h1 class="text-center">SERVICES</h1>
     <ServicesInspiration
       src="/parallaximg/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
