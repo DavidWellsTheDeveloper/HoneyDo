@@ -72,7 +72,12 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'About',
           to: '/about'
-        }
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Contact',
+          to: '/contact'
+        },
       ],
       title: 'Honey Do\'s'
     }

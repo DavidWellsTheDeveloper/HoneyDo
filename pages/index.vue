@@ -50,13 +50,16 @@
               {{ item.title }}
             </v-card-title>
             <v-card-text class="white text--primary">
-              <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+              <h3 class="my-4">{{ item.description }}</h3>
               <v-btn
+                v-if="item.servicesId"
                 :color="i % 2 == 0 ? 'primary': 'secondary'"
                 class="mx-0"
                 outlined
+                type="link"
+                :href="item.servicesId ? '/services#' + item.servicesId : ''"
               >
-                Button
+                See more
               </v-btn>
             </v-card-text>
           </v-card>
@@ -80,34 +83,47 @@
           {
             title: 'Regular House Cleaning',
             icon: 'mdi-spray-bottle',
+            description: 'Regular house cleaning services available including discounts when you start a weekly subscription.',
+            servicesId: 'servicesClean',
           },
           {
             title: 'Deep House Cleaning',
             icon: 'mdi-star',
+            description: 'For one time deep cleaning jobs we\'ll get the job done right, and take care leave your space fresh.',
           },
           {
             title: 'Office Cleaning',
             icon: 'mdi-office-building',
+            description: 'Office spaces need regular cleaning to help your employees focus. Let us ensure your office space is clean and safe.',
           },
           {
             title: 'Linens',
             icon: 'mdi-hanger',
+            description: 'We can take care of your regularly used towels and sheets. We\'re happy to service Air BnB\'s too.',
+            
           },
           {
             title: 'Trial Cleaning',
             icon: 'mdi-alarm',
+            description: 'First time cleanings are performed at a discounted hourly rate.',
           },
           {
             title: 'Pet Care',
             icon: 'mdi-paw',
+            description: 'Allow us to ensure your pets are taken care of. Our experienced pet care professionals will feed, and walk your 4 legged friends.',
+            servicesId: 'servicesPets',
           },
           {
             title: 'Child Care',
             icon: 'mdi-human-male-child',
+            description: '',
+            servicesId: 'servicesChildCare'
           },
           {
             title: 'Grocery Services',
             icon: 'mdi-cart-variant',
+            description: '',
+            servicesId: 'servicesGrocery',
           },
         ],
       }

@@ -2,9 +2,10 @@
   <v-container fluid>
     <h1 class="text-center">SERVICES</h1>
     <ServicesInspiration
+      id="servicesClean"
       src="/parallaximg/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
       color="primary"
-      title="I'll keep your home clean, and fresh"
+      title="Home Cleaning"
     >
       <p>I'm confident that you'll love the cleaning service, so your first cleaning is 
         free of charge. After your first cleaning, we'll provide a quote for additional 
@@ -12,6 +13,29 @@
     </ServicesInspiration>
 
     <ServicesInspiration
+      id="servicesOfficeClean"
+      src="/parallaximg/ian-dooley-DJ7bWa-Gwks-unsplash.jpg"
+      color="secondary"
+      title="Office Cleaning"
+    >
+      <p>I'm confident that you'll love the cleaning service, so your first cleaning is 
+        free of charge. After your first cleaning, we'll provide a quote for additional 
+        regular cleaning services.</p>
+    </ServicesInspiration>
+
+    <ServicesInspiration
+      id="servicesOfficeClean"
+      src="/parallaximg/dan-gold-aJN-jjFLyCU-unsplash.jpg"
+      color="primary"
+      title="Linens"
+    >
+      <p>I'm confident that you'll love the cleaning service, so your first cleaning is 
+        free of charge. After your first cleaning, we'll provide a quote for additional 
+        regular cleaning services.</p>
+    </ServicesInspiration>
+
+    <ServicesInspiration
+      id="servicesPets"
       src="/parallaximg/josh-hild-95RvuULh91A-unsplash.jpg"
       color="secondary"
       :invert-align="true"
@@ -28,8 +52,20 @@
         <dd>Recieve a photo update daily to keep up to date with your pets.</dd>
       </dl>
     </ServicesInspiration>
+
+    <ServicesInspiration
+      id="servicesChildCare"
+      src="/parallaximg/markus-spiske-97Rpu-UmCaY-unsplash.jpg"
+      color="primary"
+      title="Child Care"
+    >
+      <p>I'm confident that you'll love the cleaning service, so your first cleaning is 
+        free of charge. After your first cleaning, we'll provide a quote for additional 
+        regular cleaning services.</p>
+    </ServicesInspiration>
     
     <ServicesInspiration
+      id="servicesGrocery"
       src="/parallaximg/thomas-le-pRJhn4MbsMM-unsplash.jpg"
       color="primary"
       :invert-align="true"
@@ -38,11 +74,6 @@
       <p>Whether you forgot a few things last time you went, or if you just 
         want to come home to a stocked kitchen, I've got you covered.</p>
     </ServicesInspiration>
-    <!-- <v-row>
-      <v-col>
-        <v-parallax src="/paralaximg/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"></v-parallax>
-      </v-col>
-    </v-row> -->
   </v-container>
 </template>
 
