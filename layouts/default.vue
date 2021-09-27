@@ -26,15 +26,15 @@
     <v-app-bar
       :clipped-left="clipped"
       dark
-      shrink-on-scroll
-      prominent
-      src="parallaximg/chuttersnap-mzMEZy9_QLM-unsplash.jpg"
-      fade-img-on-scroll
       app
-      color="primary"
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      color="primary" >
+        <v-col cols="2">
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+        </v-col>
+        <v-spacer />
+          <v-toolbar-title v-text="title" />
+          <v-img alt="Honey Do Logo" src="HoneyDoLogoImage.svg" min-width="250px" max-width="250px" style="margin: 20px;" />
+        <v-spacer />
     </v-app-bar>
     <v-main>
       <v-container fluid>
@@ -79,8 +79,16 @@ export default {
           to: '/contact'
         },
       ],
-      title: 'Honey Do\'s'
+      title: 'Honey Do Cleaning'
     }
   }
 }
 </script>
+
+<style>
+  .v-toolbar__title {
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+</style>

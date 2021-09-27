@@ -7,17 +7,18 @@
           Welcome to the Honey Do's
           <blockquote class="blockquote">
             I can take care of all of the honey do tasks for you and your home.
-            I'll happily take care of the following for you so you can <v-icon color="primary" large>mdi-bee</v-icon> care free.
+            Here is a list of  some of the tasks I can do for you so you can 
+            <v-icon color="primary" large>mdi-bee</v-icon> care free.
           </blockquote>
         </v-card-title>
         <v-card-text>
-          <ul>
-            <li>house cleaning </li> 
-            <li>grocery shopping</li>
-            <li>house sitting</li>
-            <li>pet sitting and pet care</li>
-            <li>dog walking</li>
-            <li>child care</li>
+          <ul style="font-size: large; margin-left: 20px;">
+            <li>House cleaning </li> 
+            <li>Grocery shopping</li>
+            <li>House sitting</li>
+            <li>Pet sitting and pet care</li>
+            <li>Dog walking</li>
+            <li>Child care</li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -27,9 +28,12 @@
             nuxt
             to="/services"
           >
-            Continue
+            Services
           </v-btn>
         </v-card-actions>
+        <v-card-text style="font-size: large;">
+          View details about each of the services below:
+        </v-card-text>
       </v-card>
       <v-timeline
         align-top
