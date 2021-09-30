@@ -120,20 +120,35 @@ import 'vue-phone-number-input/dist/vue-phone-number-input.css';
         methods: {
             submit() {
                 const userID = "user_cfv28p3w2JNzUHzRiXW1l"
-                const templateID = "template_m2iq1ad"
                 const serviceID = "service_r9zmqdt"
-                const templateParams = {
+                let templateID = "template_m2iq1ad"
+                let templateParams = {
                     reply_to: this.email,
                     message: this.content,
                     from_name: this.fullName,
                     phone: this.phone,
                 }
                 emailjs.send(serviceID, templateID, templateParams, userID)
+                this.alert=true
+                setTimeout(function () {
+                    this.$nuxt.$router.push('/') // will redirect to home page
+                }, 3000); // will call the function after 3 secs.
+
+                templateID = "template_obcuh14"
+                templateParams = {
+                    fullName: this.fullName,
+                    email: this.email,
+                    phone: this.phone,
+                    message: this.content,
+                }
+                
+                emailjs.send(serviceID, templateID, templateParams, userID)
                 this.$refs.contactForm.reset();
                 this.alert=true
                 setTimeout(function () {
                     this.$nuxt.$router.push('/') // will redirect to home page
                 }, 3000); // will call the function after 3 secs.
+
             }
         },
     }
